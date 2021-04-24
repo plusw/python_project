@@ -1,0 +1,2 @@
+#https://www.cnblogs.com/liulinghua90/p/9935642.html
+因为工作中经常用到excel，用python做一个自动查询某一列下的，并写入到新建的excel
