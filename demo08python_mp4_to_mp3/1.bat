@@ -1,0 +1,2 @@
+you-get -o E:\python_project\demo08python_mp4_to_mp3\mp4\  --itag=18  https://www.youtube.com/watch?v=0v5Ee1GyBG8&list=RD0v5Ee1GyBG8&start_radio=1
+you-get -o E:\python_project\demo08python_mp4_to_mp3\mp4\  --itag=18  https://www.youtube.com/watch?v=T4SimnaiktU&list=RD0v5Ee1GyBG8&index=6
