@@ -1,0 +1,2 @@
+https://www.cnblogs.com/denny402/p/7520063.html
+大部分的pytorch入门教程，都是使用torchvision里面的数据进行训练和测试。如果我们是自己的图片数据，又该怎么做呢？

@@ -1,0 +1,2 @@
+https://zh.d2l.ai/chapter_prerequisite/autograd.html
+在深度学习中，我们经常需要对函数求梯度（gradient）。本节将介绍如何使用MXNet提供的autograd模块来自动求梯度。
