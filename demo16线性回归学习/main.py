@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 # -*- coding: gbk -*-
+=======
+>>>>>>> b31214711103690b0e539f7da5fe284b15cc05d0
 #我们构造一个简单的人工训练数据集，它可以使我们能够直观比较学到的参数和真实的模型参数的区别。设训练数据集样本数为1000，
 #输入个数（特征数）为2。给定随机生成的批量样本特征 X∈R1000×2 ，我们使用线性回归模型真实权重 w=[2,3.4]和偏差 b=4.2 ，
 #以及一个随机噪声项来生成标签
@@ -22,6 +25,7 @@ def set_figsize(figsize=(3.5, 2.5)):
     plt.rcParams['figure.figsize'] = figsize
 set_figsize()
 plt.scatter(features[:, 1].asnumpy(), labels.asnumpy(), 1);
+
 plt.show()#通过生成第二个特征features[:, 1]和标签 labels 的散点图，可以更直观地观察两者间的线性关系。
 def data_iter(batch_size, features, labels):#在训练模型的时候，我们需要遍历数据集并不断读取小批量数据样本。这里我们定义一个函数：它每次返回batch_size（批量大小）个随机样本的特征和标签。
     num_examples = len(features)
@@ -72,3 +76,6 @@ for epoch in range(num_epochs):  # 训练模型一共需要num_epochs个迭代周期
     print('epoch %d, loss %f' % (epoch + 1, train_l.mean().asnumpy()))
 print(true_w,w)
 print(true_b,b)
+=======
+plt.show()
+

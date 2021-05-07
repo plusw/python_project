@@ -5,10 +5,26 @@ import os
 import sys
 import tarfile
 
+<<<<<<< HEAD
 data_dir='./data'
 voc_dir = os.path.join(data_dir, 'VOCdevkit/VOC2012')
 def read_voc_images(root=voc_dir, is_train=True):
     txt_fname = '%s/ImageSets/Segmentation/%s' % (root, 'train.txt' if is_train else 'val.txt')
+=======
+def download_voc_pascal(data_dir='../data'):
+    voc_dir = os.path.join(data_dir, 'VOCdevkit/VOC2012')
+    url = ('http://host.robots.ox.ac.uk/pascal/VOC/voc2012/VOCtrainval_11-May-2012.tar')
+    sha1 = '4e443f8a2eca6b1dac8a6c57641b67dd40621a49'
+    fname = gutils.download(url, data_dir, sha1_hash=sha1)
+    with tarfile.open(fname, 'r') as f:
+        f.extractall(data_dir)
+    return voc_dir
+
+#voc_dir = download_voc_pascal()
+def read_voc_images(root=os.path.join('./data', 'VOCdevkit/VOC2012'), is_train=True):
+    txt_fname = '%s/ImageSets/Segmentation/%s' % (
+        root, 'train.txt' if is_train else 'val.txt')
+>>>>>>> b31214711103690b0e539f7da5fe284b15cc05d0
     with open(txt_fname, 'r') as f:
         images = f.read().split()
     features, labels = [None] * len(images), [None] * len(images)
@@ -19,6 +35,7 @@ def read_voc_images(root=voc_dir, is_train=True):
     return features, labels
 
 train_features, train_labels = read_voc_images()
+<<<<<<< HEAD
 
 n = 5
 imgs = train_features[0:n] + train_labels[0:n]
@@ -59,3 +76,9 @@ imgs = []
 for _ in range(n):
     imgs += voc_rand_crop(train_features[0], train_labels[0], 200, 300)
 d2l.show_images(imgs[::2] + imgs[1::2], 2, n);
+=======
+n=5
+imgs = train_features[0:n] + train_labels[0:n]
+d2l.show_images(imgs, 2, n);
+print(d2l.show_images.__code__)
+>>>>>>> b31214711103690b0e539f7da5fe284b15cc05d0
