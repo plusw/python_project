@@ -41,7 +41,9 @@ for x, y in data_iter(batch_size, features, labels):
 '''
 
 w = nd.random.normal(scale=0.01, shape=(num_inputs, 1))
+print("初始化:",w)
 b = nd.zeros(shape=(1,))
+print("初始化:",b)
 w.attach_grad()
 b.attach_grad()   
 
@@ -67,6 +69,8 @@ for epoch in range(num_epochs):  # 训练模型一共需要num_epochs个迭代周期
     for X, y in data_iter(batch_size, features, labels):
         with autograd.record():
             l = loss(net(X, w, b), y)  # l是有关小批量X和y的损失
+            print("loss",l)
+            print("loss")
         l.backward()  # 小批量的损失对模型参数求梯度
         sgd([w, b], lr, batch_size)  # 使用小批量随机梯度下降迭代模型参数
     train_l = loss(net(features, w, b), labels)
