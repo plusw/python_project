@@ -56,7 +56,8 @@ def main():
     cfg.merge_from_list(args.opts)
     cfg.freeze()
 
-    output_dir = cfg.OUTPUT_DIR
+    #output_dir = cfg.OUTPUT_DIR
+    output_dir = "../output_dir"
     if output_dir and not os.path.exists(output_dir):
         mkdir(output_dir)
 
