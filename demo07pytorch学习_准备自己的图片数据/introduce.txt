@@ -1,0 +1,2 @@
+#https://blog.csdn.net/hszzjs/article/details/81005636?utm_medium=distribute.pc_relevant_t0.none-task-blog-2%7Edefault%7EBlogCommendFromMachineLearnPai2%7Edefault-1.control&dist_request_id=1331988.554.16187293659979865&depth_1-utm_source=distribute.pc_relevant_t0.none-task-blog-2%7Edefault%7EBlogCommendFromMachineLearnPai2%7Edefault-1.control
+#使用自己的图片进行训练

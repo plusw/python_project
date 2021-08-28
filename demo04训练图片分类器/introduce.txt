@@ -1,0 +1,3 @@
+https://pytorch.apachecn.org/docs/1.4/blitz/cifar10_tutorial.html
+我们将使用CIFAR10数据集，它有如下的分类：“飞机”，“汽车”，“鸟”，“猫”，“鹿”，“狗”，“青蛙”，“马”，“船”，“卡车”等。
+利用pytoch训练一个图片分类器

@@ -1,0 +1,3 @@
+work经常遇到将需要采购的零件，需要制作采购清单excel，选择使用Python连接solidworks获取信息，写入excel
+需要从solidworks图的文件夹输出到新建的excel
+https://raynnmc.github.io/solidworks%20%E4%BA%8C%E6%AC%A1%E5%BC%80%E5%8F%91/2020/02/01/%E5%9F%BA%E4%BA%8E-Python-%E5%92%8C-SolidWorks-API-%E8%87%AA%E5%8A%A8%E7%94%9F%E6%88%90-BOM/

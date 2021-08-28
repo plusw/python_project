@@ -1,0 +1,2 @@
+https://zh.d2l.ai/chapter_deep-learning-basics/linear-regression-scratch.html
+学习线性回归引出深度学习
